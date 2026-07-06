@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamiz Zahoor | Aspiring Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Hamiz Zahoor — BCA student and C/C++ developer currently learning Data Structures & Algorithms on the path to Full Stack Development." />
+  <meta property="og:title" content="Hamiz Zahoor | Aspiring Full Stack Developer" />
+  <meta property="og:description" content="BCA student passionate about C/C++, DSA and Full Stack Development." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar">
+    <div class="nav-logo">&lt;Hamiz Zahoor /&gt;</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <i class="fa fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="home" class="hero">
+    <div class="hero-bg-shapes">
+      <span class="shape s1"></span>
+      <span class="shape s2"></span>
+      <span class="shape s3"></span>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting">👋 Hello, I'm</p>
+      <h1 class="hero-name">Hamiz Zahoor</h1>
+      <h2 class="hero-title">
+        <span class="typed-text" id="typed"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-desc">
+        BCA 1st Year Student | C/C++ Developer | Currently mastering Data Structures & Algorithms. On my journey to become a Full Stack Developer. 🚀
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View My Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/hamizsaifiDev" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/hamiz-saifi-aa3696383/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:hamizsaifi747@gmail.com" target="_blank" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="filename">student.cpp</span>
+        </div>
+        <pre class="code-body"><code><span class="c-pink">#include</span> <span class="c-yellow">&lt;iostream&gt;</span>
+<span class="c-pink">using namespace</span> <span class="c-blue">std</span>;
+
+<span class="c-pink">int</span> <span class="c-green">main</span>() {
+  <span class="c-blue">string</span> name = <span class="c-yellow">"Hamiz Saifi"</span>;
+  <span class="c-blue">string</span> course = <span class="c-yellow">"BCA 1st Year"</span>;
+  <span class="c-blue">string</span> learning = <span class="c-yellow">"DSA"</span>;
+  <span class="c-blue">string</span> goal = <span class="c-yellow">"Full Stack Dev"</span>;
+
+  cout &lt;&lt; <span class="c-yellow">"Dream big!"</span> &lt;&lt; endl;
+  <span class="c-pink">return</span> <span class="c-yellow">0</span>;
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2 class="section-title">About <span class="highlight">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-img-wrap">
+          <div class="about-img-placeholder">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+          <div class="about-badge">
+            <span class="badge-num">1st</span>
+            <span class="badge-text">Year BCA</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <h3>Aspiring Full Stack Developer 🎯</h3>
+          <p>
+            Hi! I'm a first-year BCA student with a strong foundation in C and C++. Currently, I'm learning Data Structures & Algorithms (DSA) and continuously improving my coding, logical thinking, and problem-solving skills. 🚀💻
+          </p>
+          <p>
+            During my first year, I built 2 real-world projects using C and C++, which enhanced my practical development experience. My goal is to learn Full Stack Web Development and become a professional software developer while continuously exploring new technologies. 🚀💻
+          </p>
+
+          <div class="journey-steps">
+            <div class="step done">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>C Language</strong>
+                <span>Completed ✅</span>
+              </div>
+            </div>
+            <div class="step done">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>C++ (OOP)</strong>
+                <span>Completed ✅</span>
+              </div>
+            </div>
+            <div class="step current">
+              <i class="fas fa-spinner fa-spin"></i>
+              <div>
+                <strong>DSA</strong>
+                <span>In Progress 🔥</span>
+              </div>
+            </div>
+            <div class="step upcoming">
+              <i class="fas fa-lock"></i>
+              <div>
+                <strong>Full Stack Dev</strong>
+                <span>Coming Soon 🚀</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-btns">
+            <a href="resume.pdf" class="btn btn-primary" download>
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+      <div class="skills-tabs">
+        <button class="tab-btn active" data-tab="programming">Programming</button>
+        <button class="tab-btn" data-tab="concepts">CS Concepts</button>
+        <button class="tab-btn" data-tab="tools">Tools</button>
+      </div>
+
+      <div class="tab-content active" id="programming">
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fas fa-code skill-icon clang"></i>
+            <span>C Language</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-laptop-code skill-icon cpp"></i>
+            <span>C++ (OOP)</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-sitemap skill-icon dsa"></i>
+            <span>DSA (Learning)</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-html5 skill-icon html"></i>
+            <span>HTML (Basics)</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="concepts">
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fas fa-cubes skill-icon oop"></i>
+            <span>OOP Concepts</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-memory skill-icon mem"></i>
+            <span>Memory Management</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-project-diagram skill-icon algo"></i>
+            <span>Algorithms</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="45"></div></div>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-database skill-icon db"></i>
+            <span>Data Structures</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="42"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tools">
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fab fa-git-alt skill-icon git"></i>
+            <span>Git & GitHub</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-terminal skill-icon terminal"></i>
+            <span>VS Code</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-terminal skill-icon linux"></i>
+            <span>Terminal / CLI</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-bug skill-icon debug"></i>
+            <span>Debugging</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+      <p class="projects-sub">My 2 Real-World C++ Projects So Far 💪</p>
+      <div class="projects-grid two-col">
+
+        <div class="project-card">
+          <div class="project-img pm-grad">
+            <i class="fas fa-lock project-icon"></i>
+          </div>
+          <div class="project-info">
+            <span class="project-tag cpp-tag">C++ Project</span>
+            <h3>Password Manager System</h3>
+            <p>A console-based password manager that securely stores usernames and passwords. It includes features such as adding, viewing, searching, and deleting records.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Add / View Passwords</span>
+              <span><i class="fas fa-check"></i> Search by Site Name</span>
+              <span><i class="fas fa-check"></i> Delete Entry</span>
+              <span><i class="fas fa-check"></i> File Storage</span>
+            </div>
+            <div class="project-tech">
+              <span>C++</span><span>File Handling</span><span>OOP</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img gr-grad">
+            <i class="fas fa-shopping-basket project-icon"></i>
+          </div>
+          <div class="project-info">
+            <span class="project-tag cpp-tag">C++ Project</span>
+            <h3>Grocery Store App</h3>
+            <p>Developed a console-based Grocery Store Management System in C++ that enables product management, bill generation, and inventory tracking. The project demonstrates practical implementation of file handling, data management, and core programming concepts. 💻📦.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Product Listing</span>
+              <span><i class="fas fa-check"></i> Add to Cart</span>
+              <span><i class="fas fa-check"></i> Bill Generation</span>
+              <span><i class="fas fa-check"></i> Stock Management</span>
+            </div>
+            <div class="project-tech">
+              <span>C++</span><span>Structures</span><span>Arrays</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="more-projects-msg">
+        <i class="fas fa-road"></i>
+        <p>More exciting projects are on the way after I complete DSA — <span class="highlight">stay tuned!</span> 🔥</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Let's Connect! 👋</h3>
+          <p>I am always eager to connect with new people, learn from different experiences, and explore new opportunities. Whether it's collaboration, networking, discussing ideas, or simply having a conversation, feel free to reach out. I look forward to connecting with like-minded individuals and professionals.!</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>hamizsaifi747@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+91 7078625730</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Sambhal, Uttar Pradesh, India</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>BCA Student</span>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/hamizsaifiDev" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/hamiz-saifi-aa3696383/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:hamizsaifi747@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-cta">
+          <div class="cta-icon">
+            <i class="fas fa-paper-plane"></i>
+          </div>
+          <h3>Let's Build Something Together</h3>
+          <p>Feel free to contact me via email or phone — I will respond as soon as possible.!</p>
+          <a href="mailto:hamizsaifi747@gmail.com" class="btn btn-primary full-width">
+            <i class="fas fa-envelope"></i> Email Me
+          </a>
+          <a href="tel:+917078625730" class="btn btn-outline full-width">
+            <i class="fas fa-phone"></i> Call Me
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 <span class="highlight">Hamiz Zahoor</span> • BCA Student • Made with <span class="heart">❤️</span> & C++</p>
+      <a href="#home" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
