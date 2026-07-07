@@ -48,7 +48,7 @@ function highlightNavLink() {
 // ========== TYPING ANIMATION ==========
 const typedEl = document.getElementById('typed');
 const words = [
-  'BCA 1st Year Student',
+  'BCA 2nd Year Student',
   'C / C++ Developer',
   'DSA Enthusiast',
   'Aspiring Full Stack Dev',
@@ -147,5 +147,5 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 
 // ========== CONSOLE EASTER EGG ==========
 console.log('%c👋 Hey there, fellow developer!', 'color:#ff2d78; font-size:16px; font-weight:bold;');
-console.log('%cBCA 1st Year → C/C++ Done → DSA In Progress → Full Stack Coming Soon! 🚀', 'color:#00d4ff; font-size:13px;');
+console.log('%cBCA 2nd Year → C/C++ Done → DSA In Progress → Full Stack Coming Soon! 🚀', 'color:#00d4ff; font-size:13px;');
 console.log('%cLet\'s connect: linkedin.com/in/hamiz-saifi-aa3696383', 'color:#888aaa; font-size:12px;');
