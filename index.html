@@ -21,6 +21,7 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#certificates">Certificates</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -238,6 +239,60 @@
     </div>
   </section>
 
+  <!-- ========== CERTIFICATES ========== -->
+  <section id="certificates" class="certificates section">
+    <div class="container">
+      <h2 class="section-title">My <span class="highlight">Certificates</span></h2>
+      <p class="certs-sub">Courses & Programs I've Completed 📜</p>
+
+      <div class="certs-grid">
+        <div class="cert-card">
+          <a href="#" class="cert-view-btn" data-cert="certificates/generative-ai-studio.pdf" data-title="Introduction to Generative AI Studio" aria-label="View Certificate">
+            <i class="fas fa-eye"></i>
+          </a>
+          <div class="cert-icon-wrap grad1">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="cert-info">
+            <h3>Introduction to Generative AI Studio</h3>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Generative AI Studio</p>
+            <div class="cert-meta">
+              <span><i class="fas fa-calendar-alt"></i> 3rd July 2026</span>
+              <span><i class="fas fa-id-badge"></i> Code: 10424532</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <a href="#" class="cert-view-btn" data-cert="certificates/intro-to-cpp.pdf" data-title="Introduction to C++" aria-label="View Certificate">
+            <i class="fas fa-eye"></i>
+          </a>
+          <div class="cert-icon-wrap grad2">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="cert-info">
+            <h3>Introduction to C++</h3>
+            <p class="cert-issuer"><i class="fas fa-building"></i> SkillUp by Simplilearn</p>
+            <div class="cert-meta">
+              <span><i class="fas fa-calendar-alt"></i> 5th July 2026</span>
+              <span><i class="fas fa-id-badge"></i> Code: 10430624</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card cert-upcoming">
+          <div class="cert-icon-wrap grad3">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="cert-info">
+            <h3>More Coming Soon</h3>
+            <p class="cert-issuer">Currently leveling up with DSA & Full Stack Dev 🚀</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ========== PROJECTS ========== -->
   <section id="projects" class="projects section">
     <div class="container">
@@ -361,6 +416,30 @@ built-in password generator and strength checker..</p>
       </a>
     </div>
   </footer>
+
+  <!-- ========== CERTIFICATE MODAL ========== -->
+  <div class="resume-modal" id="certModal">
+    <div class="resume-modal-overlay" id="certModalOverlay"></div>
+    <div class="resume-modal-box">
+      <div class="resume-modal-header">
+        <div class="resume-modal-title">
+          <i class="fas fa-certificate"></i>
+          <span id="certModalTitle">Certificate</span>
+        </div>
+        <div class="resume-modal-actions">
+          <a href="#" id="certDownloadBtn" class="btn btn-primary btn-sm-modal" download>
+            <i class="fas fa-download"></i> Download
+          </a>
+          <button class="modal-close-btn" id="certModalClose" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+      <div class="resume-modal-body">
+        <iframe id="certIframe" class="resume-iframe" src=""></iframe>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

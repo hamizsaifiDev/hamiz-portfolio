@@ -78,7 +78,7 @@ typeEffect();
 
 // ========== SCROLL REVEAL ==========
 document.querySelectorAll(
-  '.about-grid, .skill-card, .project-card, .step, .contact-grid, .section-title, .more-projects-msg'
+  '.about-grid, .skill-card, .project-card, .cert-card, .step, .contact-grid, .section-title, .more-projects-msg'
 ).forEach(el => el.classList.add('reveal'));
 
 document.querySelectorAll('.reveal').forEach(el => {
@@ -149,3 +149,37 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 console.log('%c👋 Hey there, fellow developer!', 'color:#ff2d78; font-size:16px; font-weight:bold;');
 console.log('%cBCA 2nd Year → C/C++ Done → DSA In Progress → Full Stack Coming Soon! 🚀', 'color:#00d4ff; font-size:13px;');
 console.log('%cLet\'s connect: linkedin.com/in/hamiz-saifi-aa3696383', 'color:#888aaa; font-size:12px;');
+
+// ========== CERTIFICATE MODAL ==========
+const certModal = document.getElementById('certModal');
+const certIframe = document.getElementById('certIframe');
+const certModalTitle = document.getElementById('certModalTitle');
+const certDownloadBtn = document.getElementById('certDownloadBtn');
+const certModalClose = document.getElementById('certModalClose');
+const certModalOverlay = document.getElementById('certModalOverlay');
+
+document.querySelectorAll('[data-cert]').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const certUrl = btn.getAttribute('data-cert');
+    const certTitle = btn.getAttribute('data-title') || 'Certificate';
+
+    certIframe.src = certUrl;
+    certModalTitle.textContent = certTitle;
+    certDownloadBtn.href = certUrl;
+    certModal.classList.add('active');
+    document.body.classList.add('no-scroll');
+  });
+});
+
+function closeCertModal() {
+  certModal.classList.remove('active');
+  document.body.classList.remove('no-scroll');
+  setTimeout(() => { certIframe.src = ''; }, 300);
+}
+
+certModalClose.addEventListener('click', closeCertModal);
+certModalOverlay.addEventListener('click', closeCertModal);
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && certModal.classList.contains('active')) closeCertModal();
+});
